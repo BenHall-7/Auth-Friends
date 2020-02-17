@@ -14,13 +14,11 @@ export default props => {
       username,
       password
     }).then(res => {
-      console.log(res);
       setError(false);
       setLoading(false);
-      localStorage.setItem('token', res.data.token);
+      localStorage.setItem('token', res.data.payload);
       props.history.push('/');
     }).catch(err => {
-      console.log(err);
       setError(err);
       setLoading(false);
     })
