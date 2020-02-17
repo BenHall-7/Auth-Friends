@@ -7,6 +7,10 @@ p {
   padding: 0;
 }
 
+input, button {
+  display: block;
+}
+
 .friend {
   margin: 10px;
   border: 1px solid orange;
